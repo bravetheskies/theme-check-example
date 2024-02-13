@@ -1,12 +1,12 @@
 name: Theme Check v2 with checkout v3
 on: [push, workflow_dispatch]
 jobs:
-  theme-check:
-    name: Theme Check
+  theme-check-v2-checkout-v3:
+    name: Theme Check v2 with checkout v3
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Theme Check
+      - name: Theme Check v2 with checkout v3
         uses: shopify/theme-check-action@v2
         with:
           theme_root: '.' # optional, could be './dist'
